@@ -9,21 +9,21 @@
 
 
 <ion-content padding>
-  <h2>From firebase</h2>
+  <!-- <h2>From firebase</h2>
   <button ion-button (click)="loginGoogle()">Login</button>
-  <button ion-button (click)="logout()">Logout</button>
+  <button ion-button (click)="logout()">Logout</button> -->
   
   <h2>From Native plugin</h2>
-  <button ion-button>Login</button>
-  <button ion-button>Logout</button>
+  <button ion-button (click)="login()">Login</button>
+  <button ion-button (click)="logout()">Logout</button>
   
   <ion-card *ngIf="isLoggedin">
     <ion-item text-center>
-      <img [src]="googleUser.user.photoURL">
-      <h2>{{googleUser.user.displayName}}</h2>
-      <p>{{googleUser.user.email}}</p>
+      <img [src]="googleUser.imageUrl">
+      <h2>{{googleUser.displayName}}</h2>
+      <p>{{googleUser.email}}</p>
     </ion-item>
   
-    <p text-wrap>{{googleUser.credential.accessToken}}</p>
+    <p text-wrap>{{googleUser.accessToken}}</p>
   </ion-card>
 </ion-content>

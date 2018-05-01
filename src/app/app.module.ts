@@ -14,6 +14,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+import { Facebook } from '@ionic-native/facebook';
+
+import { GooglePlus } from '@ionic-native/google-plus';
+
 var config = {
   apiKey: "AIzaSyAwZRy0ce9aODDfABR3B0MU5sLq71Z1Osw",
   authDomain: "ionic-social-f8a22.firebaseapp.com",
@@ -46,6 +50,8 @@ var config = {
   providers: [
     StatusBar,
     SplashScreen,
+    Facebook,
+    GooglePlus,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
