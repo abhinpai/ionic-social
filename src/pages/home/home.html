@@ -8,11 +8,17 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <h2>From Native plugin- Linkedin</h2>
+  <button ion-button (click)="login()">Login</button>
+  <button ion-button (click)="logout()">Logout</button>
+  
+  <ion-card *ngIf="isLoggedin">
+    <!-- <ion-item text-center>
+      <img [src]="googleUser.imageUrl">
+      <h2>{{googleUser.displayName}}</h2>
+      <p>{{googleUser.email}}</p>
+    </ion-item>
+  
+    <p text-wrap>{{googleUser.accessToken}}</p> -->
+  </ion-card>
 </ion-content>

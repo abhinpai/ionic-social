@@ -24,6 +24,7 @@
     "@ionic-native/core": "4.7.0",
     "@ionic-native/facebook": "^4.7.0",
     "@ionic-native/google-plus": "^4.7.0",
+    "@ionic-native/linkedin": "^4.7.0",
     "@ionic-native/splash-screen": "4.7.0",
     "@ionic-native/status-bar": "4.7.0",
     "@ionic/storage": "2.1.3",
@@ -34,6 +35,7 @@
     "cordova-plugin-googleplus": "^5.3.0",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.1",
+    "cordova-plugin-linkedin": "^1.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3",
     "firebase": "^4.13.1",
@@ -61,6 +63,9 @@
       },
       "cordova-plugin-googleplus": {
         "REVERSED_CLIENT_ID": "714157768440-gjqkc88td4hj7m5p8t7a0qsh4ddnmbc7.apps.googleusercontent.com"
+      },
+      "cordova-plugin-linkedin": {
+        "APP_ID": "5240245"
       }
     },
     "platforms": [

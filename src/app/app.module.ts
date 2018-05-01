@@ -18,6 +18,8 @@ import { Facebook } from '@ionic-native/facebook';
 
 import { GooglePlus } from '@ionic-native/google-plus';
 
+import { LinkedIn } from '@ionic-native/linkedin';
+
 var config = {
   apiKey: "AIzaSyAwZRy0ce9aODDfABR3B0MU5sLq71Z1Osw",
   authDomain: "ionic-social-f8a22.firebaseapp.com",
@@ -52,6 +54,7 @@ var config = {
     SplashScreen,
     Facebook,
     GooglePlus,
+    LinkedIn,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
