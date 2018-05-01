@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Facebook</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>From firebase</h2>
+  <button ion-button (click)="loginFB()">Login</button>
+  <button ion-button (click)="logout()">Logout</button>
+
+  <h2>From Native plugin</h2>
+  <button ion-button >Login</button>
+  <button ion-button >Logout</button>
+
+  <ion-card *ngIf="isLoggedin">
+    <ion-item text-center>
+      <img [src]="fbUser.user.photoURL">
+      <h2>{{fbUser.user.displayName}}</h2>
+      <p>{{fbUser.user.email}}</p>
+    </ion-item>
+
+    <p text-wrap>{{fbUser.credential.accessToken}}</p>
+  </ion-card>
+    
+</ion-content>
