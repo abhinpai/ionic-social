@@ -9,3 +9,18 @@ For Google plugin generate FingrePrint SHA1
   keytool -exportcert -keystore ~/.android/debug.keystore -list -v -alias androiddebugkey
   copy SHA1 and paste it in https://console.developers.google.com/apis/credentials/
   and add android package name same as AndroidManifest.xml or config.xml
+  
+For Linkedin Plugin
+
+  https://www.linkedin.com/
+    - create an app and fill the basic details
+    - Goto mobile in sidemenu tab add package name and Hash
+      Generate HASH by this command
+      keytool -exportcert -alias androiddebugkey -keystore debug.keystore | openssl sha1 -binary | openssl base64
+      
+Issues In Linked in plugin
+    - add compile files('src/main/libs/linkedin.jar') in '\node_modules\cordova-plugin-linkedin\src\android\LinkedIn.gradle' 
+      if dont works then add  compile files('src/main/libs/linkedin.jar') in platform/android/cordova-plugin-linkedin/gradle file
+    Add in  cordova-plugin-linkedin/plugin.xml
+    - <resource-file src="src/android/linkedin.jar" target="libs/linkedin.jar" reference="true"/>
+    - <lib-file src="src/android/linkedin.jar"/>
