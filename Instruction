@@ -1,0 +1,6 @@
+For Facebook plugin add string in android/app/src/res/values/string
+
+    <string name="fb_app_id">APP-ID</string>
+    <string name="fb_app_name">APP-NAME</string>
+    
+For Google plugin add gradle dependency 
