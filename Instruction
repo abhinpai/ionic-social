@@ -24,3 +24,7 @@ Issues In Linked in plugin
     Add in  cordova-plugin-linkedin/plugin.xml
     - <resource-file src="src/android/linkedin.jar" target="libs/linkedin.jar" reference="true"/>
     - <lib-file src="src/android/linkedin.jar"/>
+    
+References
+  * https://medium.com/@hitesh.visit/in-this-tutorial-we-will-be-making-a-login-module-using-the-linkedin-api-for-android-fc4fc8f580fc
+  * https://developer.linkedin.com/docs/android-sdk#
