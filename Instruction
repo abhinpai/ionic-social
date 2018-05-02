@@ -1,6 +1,11 @@
 For Facebook plugin add string in android/app/src/res/values/string
-
+    developer.facebook.com 
+      - create new App
     <string name="fb_app_id">APP-ID</string>
     <string name="fb_app_name">APP-NAME</string>
     
-For Google plugin add gradle dependency 
+For Google plugin generate FingrePrint SHA1
+
+  keytool -exportcert -keystore ~/.android/debug.keystore -list -v -alias androiddebugkey
+  copy SHA1 and paste it in https://console.developers.google.com/apis/credentials/
+  and add android package name same as AndroidManifest.xml or config.xml
